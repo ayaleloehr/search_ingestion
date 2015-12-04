@@ -1,0 +1,12 @@
+print "started test one.."
+    app = Flask(__name__)
+    print "initialized web server.."
+    @app.route("/",methods=["GET"])
+    def index():
+        return "Hello World!"
+    @app.route("/shutdown",methods=["POST"])
+    def shutdown():
+        shutdown_server()
+        return "Server shutting down..."
+    app.run()
+    print "running server now.."

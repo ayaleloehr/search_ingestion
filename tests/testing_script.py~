@@ -1,0 +1,4 @@
+from ingestion.engine import Crawler
+
+c = Crawler("http://localhost:5000/test_two",2,testing=True)
+c.crawl()

@@ -1,0 +1,8 @@
+from disutils.core import setup
+
+setup(name="ingestion",
+      version="0.0",
+      description="an ingestion engine for vets.gov",
+      author="Eric Schles",
+      packages=["ingestion"]
+)
