@@ -11,4 +11,4 @@ def index(website,depth):
         return "failure"
 
 
-app.run(debug=True)
+app.run('0.0.0.0')
